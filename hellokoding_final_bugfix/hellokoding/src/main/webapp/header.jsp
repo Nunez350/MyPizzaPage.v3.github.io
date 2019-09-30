@@ -7,6 +7,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <head>
+<audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
 <!-- jQuery library -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,24 +26,7 @@
 	rel="stylesheet">
 <meta charset="utf-8">
 <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">-->
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-	crossorigin="anonymous">
 
-<link href="resources/css/signup3.css" rel="stylesheet">
-<link href="resources/css/loginformCss.css" rel="stylesheet"
-	type="text/css">
-<link rel="stylesheet" type="text/css"
-	href="resources/css/HomePageStyle.css">
-
-<link rel="stylesheet" type="text/css"
-	href="resources/css/MenuStyle.css">
-<link rel="stylesheet" href="resources/css/styles.css" />
-<link href="resources/css/MainDeals.css" rel="stylesheet"
-	type="text/css">
-<script src="resources/javascript/store.js" async></script>
-<script src="resources/javascript/order.js" async></script>
 <script type="text/javascript">
 	captureEnter = function() {
 		if (window.event.keyCode == 13) {
