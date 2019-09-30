@@ -1,4 +1,10 @@
-<jsp:include page="header.jsp" />
+<head>
+<link rel="stylesheet"
+	href= HomePageStyle.css>
+
+
+</head>
+
 <!--our header-->
 <h1 align="center">
 	<span style='font-size: 100px;'>&#127829;</span><span
@@ -131,4 +137,3 @@
 		$("#myModal").modal('show');
 	});
 </script>
-<jsp:include page="footer.jsp" />
