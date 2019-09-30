@@ -1,4 +1,8 @@
-<jsp:include page="header.jsp" />
+<!--<jsp:include page="header.jsp" />-->
+<head>
+	<link href="resources/css/storeLocatorStyle.css" type = "text/css" rel="stylesheet">
+</head>
+
 <script>
 			var map;
 			var markers = [];
@@ -64,15 +68,13 @@
 
 <div class="container">
 	<div align="center">
-		<audio controls autoplay loop
+		<audio controls autoplay loop hidden
 			src="resources/media/01_Stars_at_Our_Backs.mp3" type="audio/mp3"></audio>
 	</div>
-	<!--Html style allows us to resize content -->
-	<body style="margin-top: 60px;" "padding:0px;" onload="initMap()">
+	<body style="margin-top: 0px;" "padding:0px;" onload="initMap()">
 
 		<div id="map" style="width: 80%; height: 65%; margin-left: 10%"
 			border-style=solid border-width=thick></div>
-		<!-- table to align text in a neat manner -->
 		<table>
 			<tr style="font-size: 150%">
 				<th>Location</th>
@@ -80,7 +82,6 @@
 				<th>Store Hours</th>
 			</tr>
 			<tr>
-				<!-- address italizes the address, just how html works -->
 				<td><address>110 Allen Rd, Basking Ridge, NJ</address></td>
 				<td>123-456-7890</td>
 				<td>Mon - Fri: 12 - 11, Sat: 12 - 1</td>
@@ -97,4 +98,4 @@
 			
 		</script>
 
-		<jsp:include page="footer.jsp" />
+		<!-- <jsp:include page="footer.jsp" /> -->
