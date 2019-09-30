@@ -1,4 +1,33 @@
-<jsp:include page="header.jsp" />
+<head>
+<link rel="stylesheet"
+	href= HomePageStyle.css>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Pizza Shop</a>
+			</div>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="/deals">Deals</a></li>
+				<li class="nav-item"><a class="nav-link" href="/shopMenu">Order</a></li>
+				<li class="nav-item"><c:if
+						test="${pageContext.request.userPrincipal.name == null}">
+						<a class="nav-link active" href="/login">Login</a>
+					</c:if></li>
+				<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+				<li><c:if
+						test="${pageContext.request.userPrincipal.name != null}">
+						<a class="nav-link" href="/logout">Logout</a>
+					</c:if></li>
+				<li class="nav-item float-right"><a class="nav-link"
+					href="/storeLocator"><i class='fas fa-map-marker-alt'
+						style='font-size: 35px; color: red'></i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+</head>
 <div class="container"></div>
 <!--our header-->
 <h1 align="center">
