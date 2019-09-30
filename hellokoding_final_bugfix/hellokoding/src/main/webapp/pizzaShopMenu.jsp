@@ -9,10 +9,6 @@
 </head>
 
 <div class="container">
-	<div align="center">
-		<audio controls autoplay loop
-			src="resources/media/01_Stars_at_Our_Backs.mp3" type="audio/mp3"></audio>
-	</div>
 	<h1 align="center">Menu</h1>
 	<h2 align="center">
 		<font color="red"> Welcome to the pizza shop where we got
