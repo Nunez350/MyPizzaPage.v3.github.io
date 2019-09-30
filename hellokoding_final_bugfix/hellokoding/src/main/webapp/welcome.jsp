@@ -1,11 +1,5 @@
 <!--<jsp:include page="header.jsp" />-->
-<head>
-<link rel="stylesheet"
-	href= HomePageStyle.css>
 
-
-
-</head>
 <div class="container"></div>
 <!--our header-->
 <h1 align="center">
