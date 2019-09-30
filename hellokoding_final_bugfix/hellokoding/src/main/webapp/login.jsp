@@ -1,4 +1,14 @@
 <jsp:include page="header.jsp" />
+	<div class="container1" style="background-color: #f1f1f1">
+		<button type="button" class="cancelbtn">Cancel</button>
+		<!--span tag is used for identifying inline elements in the document-->
+		<span class="psw">Forgot <a href="#">password?</a></span>
+		<!-- paragraph tag-->
+		<p>
+			Not a member yet? Sign up for points and rewards?<a
+				href="registration.jsp">Sign up now!</a> ?
+		</p>
+	</div>
 <head>
 <!-- Latest compiled JavaScript -->
 <script
@@ -23,6 +33,7 @@
 <body>
 
 	<div id="imagebg">
+
 		<!-- our audio file-->
 		<!--<audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>-->
 		<!--navigation feature-->
@@ -51,6 +62,7 @@
 					me
 				</label>
 			</form>
+				
 		</div>
 	</div>
 	<div class="container1" style="background-color: #f1f1f1">
@@ -60,7 +72,7 @@
 		<!-- paragraph tag-->
 		<p>
 			Not a member yet? Sign up for points and rewards?<a
-				href="SignUpForm.html">Sign up now!</a> ?
+				href="registration.jsp">Sign up now!</a> ?
 		</p>
 	</div>
 	<!-- </form>-->
