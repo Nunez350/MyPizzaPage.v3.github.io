@@ -7,7 +7,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.*;
 @Component
 public class UserValidator implements Validator {
     @Autowired
@@ -37,6 +39,13 @@ public class UserValidator implements Validator {
 
         if (!user.getPasswordConfirm().equals(user.getPassword())) {
             errors.rejectValue("passwordConfirm", "Diff.userForm.passwordConfirm");
+        }
+        
+        String pattern = ".+@.+.+$"; 
+     
+        if ( pattern.matches(user.getEmail())) {
+       
+        	  errors.rejectValue("emmail", "not a valid email");
         }
     }
 }

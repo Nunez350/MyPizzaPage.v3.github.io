@@ -30,6 +30,7 @@
   </head>
 
   <body>
+    <script src="/resources/javascript/SignUpForm.js"></script>
  <body background="MyImage.png"> 
     <div class="container">
 

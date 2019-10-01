@@ -22,7 +22,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
-
+ 
 	<div id="imagebg">
 
 		<!-- our audio file-->
@@ -43,7 +43,8 @@
 					style="background-color: #FFED18"><b>Password</b></label> <input
 					type="password" placeholder="Enter Password" name="password"
 					required><span>${error}</span><input type="hidden"
-					name="${_csrf.parameterName}" value="${_csrf.token}" />
+					name="${_csrf.parameterName}" value="${_csrf.token}" onclick="submit_by_name()"/>
+					
 				<!--button tag used to create clickable buttons on the web page-->
 				<button id="button" class="btn btn-lg btn-primary btn-block"
 					type="submit">Login</button>
