@@ -1,4 +1,5 @@
-<jsp:include page="header.jsp" />
+<!--<jsp:include page="header.jsp" />-->
+
 <div class="container"></div>
 <!--our header-->
 <h1 align="center">
