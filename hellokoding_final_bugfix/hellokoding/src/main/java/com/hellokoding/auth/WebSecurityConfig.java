@@ -78,7 +78,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/**/*.{js,html}") // ignore security for the swagger UI
 				.antMatchers("/resources/**", "/registration", "*.jsp")
 				.antMatchers("/welcome")
-				.antMatchers("/about")
+				//.antMatchers("/about")
 				.antMatchers("/shopMenu","/deals");
 	}
 
