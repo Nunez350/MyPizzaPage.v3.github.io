@@ -75,7 +75,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.ignoring() 
 				// ignore security for all the below URL patterns and HTTP methods
 				.antMatchers(HttpMethod.OPTIONS, "/**") // Ignore security for HTTP method (OPTIONS)
-				.antMatchers("/**/*.{js,html}"); // ignore security for the swagger UI
+				.antMatchers("/**/*.{js,html}") // ignore security for the swagger UI
+				.antMatchers("/resources/**", "/registration", "*.jsp")
+				.antMatchers("/welcome")
+				.antMatchers("/about")
+				.antMatchers("/shopMenu","/deals");
 	}
 
 
