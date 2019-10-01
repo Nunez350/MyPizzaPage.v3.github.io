@@ -12,6 +12,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.hellokoding.auth.model.User;
 import com.hellokoding.auth.service.SecurityService;
@@ -85,6 +87,23 @@ public class UserController {
 	@GetMapping({ "/deals" })
 	public String deals() {
 		return "MainDeals";
+	}
+	
+	/**
+	 * method to show the update movie page update-movie.html
+	 * @param id
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/updateCust")
+	private String updateMovie(@RequestParam(name = "id") long id, Model model) {
+		model.addAttribute("memberid", id);
+		return "updateCust";
+	}
+	
+	@GetMapping({ "/update" })
+	public String update() {
+		return "updateCust";
 	}
 	
 

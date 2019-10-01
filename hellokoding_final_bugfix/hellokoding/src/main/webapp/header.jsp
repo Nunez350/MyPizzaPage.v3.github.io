@@ -71,6 +71,7 @@
 				<li class="nav-item"><a class="nav-link" href="/welcome">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="/deals">Deals</a></li>
 				<li class="nav-item"><a class="nav-link" href="/shopMenu">Order</a></li>
+				<li class="nav-item"><a class="nav-link" href="/shopMenu">${username}</a></li>
 				<li class="nav-item"><c:if
 						test="${pageContext.request.userPrincipal.name == null}">
 						<a class="nav-link active" href="/login">Login</a>
