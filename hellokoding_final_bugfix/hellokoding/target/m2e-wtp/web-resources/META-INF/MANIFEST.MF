@@ -1,20 +1,10 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
-Built-By: Daniel Murtagh
-Build-Jdk: 12.0.2
 Implementation-Title: auth
 Implementation-Version: 2.1.1.RELEASE
+Built-By: roynu
 Implementation-Vendor-Id: org.springframework.boot
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
- -starter-parent/auth
-=======
-Built-By: terry
-Build-Jdk: 10.0.2
-Implementation-Title: auth
-Implementation-Version: 2.1.1.RELEASE
-Implementation-Vendor-Id: org.springframework.boot
+Build-Jdk: 1.8.0_221
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/auth
->>>>>>> 207c59a750a22f5032225d8c96827658c7b1da12
 Created-By: Maven Integration for Eclipse
 
