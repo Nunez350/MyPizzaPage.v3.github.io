@@ -64,7 +64,7 @@
 				<a class="navbar-brand" href="#">Pizza Shop</a>
 			</div>
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="/welcome">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="/deals">Deals</a></li>
 				<li class="nav-item"><a class="nav-link" href="/shopMenu">Order</a></li>
 				<li class="nav-item"><c:if

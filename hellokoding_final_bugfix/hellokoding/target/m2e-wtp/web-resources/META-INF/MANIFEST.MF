@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Daniel Murtagh
+Build-Jdk: 12.0.2
+Implementation-Title: auth
+Implementation-Version: 2.1.1.RELEASE
+Implementation-Vendor-Id: org.springframework.boot
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/auth
+Created-By: Maven Integration for Eclipse
+

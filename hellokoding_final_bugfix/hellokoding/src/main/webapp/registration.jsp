@@ -57,6 +57,30 @@
                     <form:errors path="passwordConfirm"></form:errors>
                 </div>
             </spring:bind>
+            
+            <spring:bind path="first_name">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="text" path="first_name" class="form-control"
+                                placeholder="first_name"></form:input>
+                    <form:errors path="first_name"></form:errors>
+                </div>
+            </spring:bind>
+            
+            <spring:bind path="last_name">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="text" path="last_name" class="form-control"
+                                placeholder="last_name"></form:input>
+                    <form:errors path="last_name"></form:errors>
+                </div>
+            </spring:bind>
+            
+            <spring:bind path="email">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="text" path="email" class="form-control"
+                                placeholder="email"></form:input>
+                    <form:errors path="email"></form:errors>
+                </div>
+            </spring:bind>
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
         </form:form>

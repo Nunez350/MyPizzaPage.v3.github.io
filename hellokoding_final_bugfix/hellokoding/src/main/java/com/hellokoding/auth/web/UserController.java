@@ -86,6 +86,8 @@ public class UserController {
 	public String deals() {
 		return "MainDeals";
 	}
+	
+
 
 	@GetMapping({ "/shopMenu" })
 	public String shopMenu() {
