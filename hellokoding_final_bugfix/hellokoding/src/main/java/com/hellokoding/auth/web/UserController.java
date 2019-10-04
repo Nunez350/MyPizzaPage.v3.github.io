@@ -12,8 +12,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.hellokoding.auth.model.User;
 import com.hellokoding.auth.service.SecurityService;
@@ -30,7 +28,9 @@ public class UserController {
 
 	@Autowired
 	private UserValidator userValidator;
+	
 
+	
 	@GetMapping("/registration")
 	public String registration(Model model) {
 		model.addAttribute("userForm", new User());
@@ -64,6 +64,14 @@ public class UserController {
 		return "login";
 	}
 
+
+	
+//	@GetMapping({ "/jspDelete/{id}" })
+//	public String jspDelete(@RequestParam String id) {
+//		//UserService.deleteUser(id);
+//		
+//		return "jspDelete";
+//	}
 	@GetMapping({ "/logout" })
 	public String logout(HttpServletRequest request) {
 		HttpSession session = request.getSession(false);
@@ -95,11 +103,7 @@ public class UserController {
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value = "/updateCust")
-	private String updateMovie(@RequestParam(name = "id") long id, Model model) {
-		model.addAttribute("memberid", id);
-		return "updateCust";
-	}
+	
 	
 	@GetMapping({ "/update" })
 	public String update() {
@@ -117,6 +121,7 @@ public class UserController {
 	public String about() {
 		return "AboutUsPage";
 	}
+	
 
 	@GetMapping({ "/storeLocator" })
 	public String storeLocator() {

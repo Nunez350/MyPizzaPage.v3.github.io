@@ -9,14 +9,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long memeberid;
-
+    
+    //@Column(nullable = false, unique = true)
+    
     private String username;
 
     private String password;
     
-
-
 	private String first_name;
+	
     private String last_name;
     
     private String email;

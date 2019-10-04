@@ -22,7 +22,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
- 
+
 	<div id="imagebg">
 
 		<!-- our audio file-->
@@ -32,7 +32,7 @@
 			<br> <br> <img src="resources/images/Rewards4.jpg"
 				alt="MyImage" class="image" style="width: 600px; height: 350px;">
 		</div>
-		<div class="container" align="center">
+		<div class="container" align="center">	
 			<form method="POST" action="${contextPath}/login" class="form-signin">
 				<!--- The <label> tag does not render as anything special for the user but
                it toggles the control for the user clicks-->
@@ -43,8 +43,7 @@
 					style="background-color: #FFED18"><b>Password</b></label> <input
 					type="password" placeholder="Enter Password" name="password"
 					required><span>${error}</span><input type="hidden"
-					name="${_csrf.parameterName}" value="${_csrf.token}" onclick="submit_by_name()"/>
-					
+					name="${_csrf.parameterName}" value="${_csrf.token}" />
 				<!--button tag used to create clickable buttons on the web page-->
 				<button id="button" class="btn btn-lg btn-primary btn-block"
 					type="submit">Login</button>

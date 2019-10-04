@@ -15,12 +15,18 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.HashSet;
 import java.util.Set;
 
+/*User object using the DAO, 
+ *  if it exists, wrap it into a User object, 
+ *  which implements UserDetails, and returns it:
+ * */
+ 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService{
     @Autowired
     private UserRepository userRepository;
 
     @Override
+    //defines the scope of a single database transaction.
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) {
         User user = userRepository.findByUsername(username);

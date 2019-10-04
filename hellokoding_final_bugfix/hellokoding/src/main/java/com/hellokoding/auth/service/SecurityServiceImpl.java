@@ -12,12 +12,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SecurityServiceImpl implements SecurityService{
+	/*container for authentication providers,
+	will either throw an exception or 
+	return a fully populated Authentication object*/
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    //Locates the user based on the username. 
     @Autowired
     private UserDetailsService userDetailsService;
 
+    //add logging support RESTful Web Service
     private static final Logger logger = LoggerFactory.getLogger(SecurityServiceImpl.class);
 
     @Override
@@ -29,7 +34,7 @@ public class SecurityServiceImpl implements SecurityService{
 
         return null;
     }
-
+    //Authentication
     @Override
     public void autoLogin(String username, String password) {
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);

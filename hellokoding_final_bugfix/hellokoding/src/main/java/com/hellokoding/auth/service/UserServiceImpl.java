@@ -15,7 +15,8 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     @Autowired
     private RoleRepository roleRepository;
-    @Autowired
+    
+    @Autowired // org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
@@ -24,7 +25,7 @@ public class UserServiceImpl implements UserService {
         user.setRoles(new HashSet<>(roleRepository.findAll()));
         userRepository.save(user);
     }
-
+    
     @Override
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
